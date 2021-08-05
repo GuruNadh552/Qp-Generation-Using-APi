@@ -6,7 +6,7 @@ function App() {
     let s = document.getElementById('bbb');
     s.style.display="none";
     window.print();
-    s.style.display="";
+    window.location.reload(false);
   }
   return (
     <div className="App">
