@@ -1,16 +1,21 @@
 import './App.css';
+import InputData from './components/InputData';
 import Paper from './components/paper';
-import React from "react";                                                                                                                                                                   
+import React from "react";  
+import {BrowserRouter,Switch,Link,Route} from 'react-router-dom';                                                                                                                                                                 
 function App() {
-  const printDiv = () => {
-    let s = document.getElementById('bbb');
-    s.style.display="none";
-    window.print();
-  }
   return (
     <div className="App">
-      <button onClick={printDiv} id="bbb" className="btn btn-info p-3 mt-5">Print Paper</button>
-      <Paper/>
+    <BrowserRouter>
+    <Switch>
+      <Route exact path="/">
+        <InputData />
+      </Route>
+      <Route exact path="/print">   
+        <Paper/>
+      </Route>
+    </Switch>
+    </BrowserRouter>
     </div>
   );
 }
