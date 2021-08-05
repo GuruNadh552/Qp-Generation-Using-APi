@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Paper from './components/paper';
+import React from "react";                                                                                                                                                                   
 function App() {
+  const printDiv = () => {
+    let s = document.getElementById('bbb');
+    s.style.display="none";
+    window.print();
+    s.style.display="";
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={printDiv} id="bbb" className="btn btn-info p-3 mt-5">Print Paper</button>
+      <Paper/>
     </div>
   );
 }
