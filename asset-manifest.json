@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/qpguru/static/css/main.9943e399.chunk.css",
+    "main.js": "/qpguru/static/js/main.4337ebc3.chunk.js",
+    "main.js.map": "/qpguru/static/js/main.4337ebc3.chunk.js.map",
+    "runtime-main.js": "/qpguru/static/js/runtime-main.5298523a.js",
+    "runtime-main.js.map": "/qpguru/static/js/runtime-main.5298523a.js.map",
+    "static/js/2.9e6b7870.chunk.js": "/qpguru/static/js/2.9e6b7870.chunk.js",
+    "static/js/2.9e6b7870.chunk.js.map": "/qpguru/static/js/2.9e6b7870.chunk.js.map",
+    "static/js/3.7c99f191.chunk.js": "/qpguru/static/js/3.7c99f191.chunk.js",
+    "static/js/3.7c99f191.chunk.js.map": "/qpguru/static/js/3.7c99f191.chunk.js.map",
+    "index.html": "/qpguru/index.html",
+    "static/css/main.9943e399.chunk.css.map": "/qpguru/static/css/main.9943e399.chunk.css.map",
+    "static/js/2.9e6b7870.chunk.js.LICENSE.txt": "/qpguru/static/js/2.9e6b7870.chunk.js.LICENSE.txt",
+    "static/media/logo.64b8b27f.jpg": "/qpguru/static/media/logo.64b8b27f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5298523a.js",
+    "static/js/2.9e6b7870.chunk.js",
+    "static/css/main.9943e399.chunk.css",
+    "static/js/main.4337ebc3.chunk.js"
+  ]
+}
