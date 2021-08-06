@@ -10,7 +10,6 @@ const Paper = () => {
         /*axios.post('https://610ba5b32b6add0017cb39c5.mockapi.io/questions',data).then(response => {
             console.log(response);
         })*/
-
         axios.get('https://610ba5b32b6add0017cb39c5.mockapi.io/questions').then(response => {
             let l = (response.data).length - 1;
             setData(response.data[l]);
@@ -18,13 +17,18 @@ const Paper = () => {
     }
     useEffect(()=>{
         getdatafromApi();
-    })
+    });
     const printDiv = () => {
         let s = document.getElementById('bbb');
         s.style.display="none";
         window.print();
       }
     return (
+        (data === 0 ? (<div className="mt-5 text-center text-danger">
+            <div class="spinner-border text-danger" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
+        </div>):
         (data && <>
             <button onClick={printDiv} id="bbb" className="btn btn-info p-3 mt-5">Print Paper</button>
             <div className="container border border-secondary mt-5">
@@ -65,7 +69,7 @@ const Paper = () => {
                 }
                 <div className="mt-5"></div>
             </div>
-            </>)
+            </>))
     )
 }
 
